@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel = "stylesheet">
+    <title>TodoList</title>
+  </head>
+  <body>
+    <div id = "projectsContainer">
+      <div id = "projects">Category</div>
+      <button id = "addNewCategory">addNewCategory</button>
+      <div id ="listOfCategories"></div>
+    </div>
+    <div id = "todoItemsContainer">
+      <div id = "todoItems">Todo Items</div>
+      <button type = "button" id = "addNewItem">addNewItem</button>
+      <form>
+        <label for = "title">Title</label><br>
+        <input type = "text" name = "title" required>
+        <br><br>
+        <label for = "Description">Description</label><br>
+        <textarea name = "Description" rows = "3" cols = "50"></textarea>
+        <br><br>
+        <label for = "dueDate">Due date</label><br>
+        <input type = "date" name = "dueDate" required>
+        <br><br>
+        <label for = "Priority">Priority</label><br>
+        <input type = "radio" name = "Priority" value = "Urgent_and_important"> Urgent_and_important<br>
+        <input type = "radio" name = "Priority" value = "Not_urgent_and_important"> Not_urgent_and_important<br>
+        <input type = "radio" name = "Priority" value = "Urgent_and_not_important"> Urgent_and_not_important<br>
+        <input type = "radio" name = "Priority" value = "Not_urgent_and_not_important"> Not_urgent_and_not_important<br><br>
+        <label for = "checkList">Checklist</label><br>
+        <input type = "radio" name = "checkList" value = "completed"> Completed<br>
+        <input type = "radio" name = "checkList" value = "Not_completed"> Not_completed<br><br>
+        <label for = "note">Note</label><br>
+        <textarea name = "note" rows = "5" cols = "50"></textarea>
+        <button type = "button" id = "cancel">Cancel</button>
+        <button type = "button" id = "enter">Enter item</button>
+        <div style = "color : red;">Note: Title, Due date, Priority and Checklist <b>MUST</b> be filled</div>
+      </form>
+      <div id ="listOfTodoItems">Empty Todo list</div>
+    </div>
+
+  </body>
+  <script type = "module" src = "index.js"></script>
+  <script type = "module" src = "script.js"></script>
+  <script type = "module" src = "application.js"></script>
+</html>

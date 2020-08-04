@@ -1,0 +1,76 @@
+
+#projectsContainer{
+  border : 1px solid black;
+  float : left;
+  width: 36%;
+  height: 99vh;
+}
+#todoItemsContainer{
+  border : 1px solid black;
+  height: 99vh;
+  float : right;
+  width: 63%;
+}
+#projects, #todoItems{
+  height : 50px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 32px;
+}
+#projects, #listOfCategories{
+  background-color: #fbceb1;
+}
+#todoItems, #listOfTodoItems{
+  background-color: lightblue;
+}
+#listOfTodoItems{
+  font-size : 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+button{
+  height: 40px;
+  font-weight: bolder;
+  margin : 20px;
+  cursor: pointer;
+}
+form{
+  border : 1px solid black;
+  padding: 20px;
+  width: 500px;
+  margin-left: 20px;
+  display : none;
+  position : relative;
+  left : 250px;
+  top:-40px;
+}
+[type = "text"], [type = "date"]{
+  width : 400px;
+  height : 30px;
+}
+#listOfCategories, #listOfTodoItems{
+  border : 1px solid black;
+  height : 70vh;
+  overflow: scroll;
+}
+@media screen and (max-width: 900px){
+  #todoItemsContainer{
+    float : none;
+    width : 100%;
+  }
+  #projectsContainer{
+    float : none;
+    width: 100%;
+  }
+  form{
+    border : 1px solid black;
+    padding: 20px;
+    width: 500px;
+    margin-left: 20px;
+    display : none;
+    position : relative;
+    left : 0;
+    top:-12px;
+  }
+}
