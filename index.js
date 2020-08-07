@@ -1,5 +1,5 @@
 /*This file is the backbone of this application. It shows the classes required
-for this application ff*/
+for this application */
 
 /* TodoItem class */
 export class TodoItem{
