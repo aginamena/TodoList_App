@@ -1,7 +1,6 @@
 /*This file is the backbone of this application. It shows the classes required
 for this application */
 
-/*Tasdfjalsdfj;alskdjf;alsdjkf;aslkdjf*/
 /* TodoItem class */
 export class TodoItem{
   constructor(title, descripton, dueDate, priority,
